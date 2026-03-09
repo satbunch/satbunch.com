@@ -21,12 +21,7 @@ const pageType = Astro.url.pathname.startsWith('/posts') ? 'article' : 'website'
 const pageTitle = title ? `${title} - ${siteConfig.title}` : siteConfig.title
 const pageDescription = description || siteConfig.description
 const pageAuthor = author || siteConfig.author
-const pageImage =
-  pageType === 'article'
-    ? Astro.url.origin +
-      Astro.url.pathname.replace(/\/posts\//, '/social-cards/') +
-      '.png'
-    : `${Astro.url.origin}/social-cards/__default.png`
+const pageImage = `${Astro.url.origin}/social-cards/default.png`
 const pageKeywords = [
   ...new Set(siteConfig.tags.concat(tags || []).map((word) => word.toLowerCase())),
 ].join(', ')
@@ -141,7 +136,7 @@ let generatedCss: string = cssLines.join('\n')
     <meta name="keywords" content={pageKeywords} />
     <link rel="canonical" href={pageUrl} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link
       rel="alternate"
       type="application/rss+xml"
