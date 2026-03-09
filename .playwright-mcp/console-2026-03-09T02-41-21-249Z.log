@@ -1,2 +1,0 @@
-[   86177ms] [ERROR] Framing 'https://github.com/' violates the following Content Security Policy directive: "frame-ancestors 'none'". The request has been blocked.
- @ :0
