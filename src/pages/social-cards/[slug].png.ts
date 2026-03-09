@@ -1,5 +1,3 @@
-export const prerender = true
-
 import siteConfig from '~/site.config'
 import { Resvg } from '@resvg/resvg-js'
 import type { APIContext, InferGetStaticPropsType } from 'astro'

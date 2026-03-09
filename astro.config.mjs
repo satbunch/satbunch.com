@@ -23,7 +23,6 @@ import remarkMath from 'remark-math'/* for latex math support */
 import rehypeKatex from 'rehype-katex'/* again, for latex math support */
 import remarkGemoji from './src/plugins/remark-gemoji'/* for shortcode emoji support */
 import rehypePixelated from './src/plugins/rehype-pixelated' /* Custom plugin to handle pixelated images */
-import cloudflare from '@astrojs/cloudflare'
 
 // https://astro.build/config
 export default defineConfig({
@@ -66,9 +65,6 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
-    ssr: {
-      external: ['@resvg/resvg-js'],
-    },
   },
 
   integrations: [
@@ -88,6 +84,4 @@ export default defineConfig({
   experimental: {
     contentIntellisense: true,
   },
-
-  adapter: cloudflare(),
 })
