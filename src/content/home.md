@@ -5,4 +5,4 @@ avatarImage:
 githubCalendar: 'stelcodes'
 ---
 
-Welcome to the example site. This site is meant to show off my custom Astro theme/template **MultiTerm** which creates a coder-ready blog complete with an interactive theme changer, RSS, sitemap, tagging, and markdown extensions.
+フロントエンドからバックエンドまで何でもやるエンジニア。React / TypeScript が好きで、最近は AWS や AI まわりも触っています。学んだことをちょくちょく書いていきます。
