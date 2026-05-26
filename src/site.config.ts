@@ -6,12 +6,11 @@ const config: SiteConfig = {
   // The name of your site, used in the title and for SEO.
   title: 'satbunch.com',
   // The description of your site, used for SEO and RSS feed.
-  description:
-    'A coder-ready Astro blog theme with 59 of your favorite color schemes to choose from',
+  description: "satbunch's personal homepage and tech blog",
   // The author of the site, used in the footer, SEO, and RSS feed.
   author: 'satbunch',
   // Keywords for SEO, used in the meta tags.
-  tags: ['Astro', 'Terminal', 'Theme', 'MultiTerm', 'stelcodes'],
+  tags: ['TypeScript', 'React', 'Next.js', 'AWS', 'Neovim', 'Linux'],
   // Path to the image used for generating social media previews.
   // Needs to be a square JPEG file due to limitations of the social card generator.
   // Try https://squoosh.app/ to easily convert images to JPEG.
@@ -165,7 +164,7 @@ const config: SiteConfig = {
   // IMPORTANT: Update giscus.json in the root of the project with your own website URL
   // If you don't want to use Giscus, set this to undefined.
   giscus: {
-    repo: 'stelcodes/multiterm-astro',
+    repo: 'satbunch/satbunch.com',
     repoId: 'R_kgDOPNnBig',
     category: 'Giscus',
     categoryId: 'DIC_kwDOPNnBis4CteOc',
