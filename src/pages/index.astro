@@ -6,8 +6,6 @@ import PostPreview from '~/components/PostPreview.astro'
 import Pagination from '~/components/Pagination.astro'
 import BlockHeader from '~/components/BlockHeader.astro'
 import HomeBanner from '~/components/HomeBanner.astro'
-import siteConfig from '~/site.config'
-import SeriesSection from '~/components/SeriesSection.astro'
 
 const home = await getCollection('home')
 let HomeContent
@@ -21,11 +19,6 @@ if (home.length > 0) {
   homeGithubCalendar = homeEntry.data.githubCalendar
 }
 const sortedPosts = await getSortedPosts()
-const postsHaveTags = sortedPosts.some(
-  (post) => post.data.tags && post.data.tags.length > 0,
-)
-
-const postsHaveSeries = sortedPosts.some((post) => post.data.series)
 ---
 
 <Layout>
@@ -37,20 +30,12 @@ const postsHaveSeries = sortedPosts.some((post) => post.data.series)
     )
   }
   {
-    postsHaveSeries && (
-      <section>
-        <BlockHeader>Series</BlockHeader>
-        <SeriesSection posts={sortedPosts} />
-      </section>
-    )
-  }
-  {
     sortedPosts.length > 0 && (
       <section>
         <BlockHeader>Latest Posts</BlockHeader>
         {sortedPosts
           .reverse()
-          .slice(0, Math.floor(siteConfig.pageSize / 2))
+          .slice(0, 10)
           .map((post) => (
             <PostPreview post={post} />
           ))}
