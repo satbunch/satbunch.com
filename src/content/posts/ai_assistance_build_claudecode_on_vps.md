@@ -1,7 +1,6 @@
 +++
 title = "VPSでClaude Codeを専属AIアシスタントとして運用する"
-date = 2026-05-26
-template = "article/page.html"
+published = 2026-05-26
 draft = true
 tags = ["claude-code", "vps", "discord", "AI", "automation"]
 +++
