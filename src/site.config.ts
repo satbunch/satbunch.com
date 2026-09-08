@@ -61,26 +61,34 @@ const config: SiteConfig = {
     // Their values can be either a literal color (hex, rgb, hsl) or another theme key.
     // See themeKeys list in src/types.ts for available keys to override and reference.
     overrides: {
-      // Improve readability for aurora-x theme
-      // 'aurora-x': {
-      //   background: '#292929FF',
-      //   foreground: '#DDDDDDFF',
-      //   warning: '#FF7876FF',
-      //   important: '#FF98FFFF',
-      //   note: '#83AEFFFF',
-      // },
-      // Make the GitHub dark theme a little cuter
-      // 'github-light': {
-      //   accent: 'magenta',
-      //   heading1: 'magenta',
-      //   heading2: 'magenta',
-      //   heading3: 'magenta',
-      //   heading4: 'magenta',
-      //   heading5: 'magenta',
-      //   heading6: 'magenta',
-      //   separator: 'magenta',
-      //   link: 'list',
-      // },
+      // Editorial Minimal palette: warm paper background, single ink tone for
+      // headings (no per-level rainbow), accent reserved for links only.
+      'min-light': {
+        background: '#fbf9f5',
+        foreground: '#262218',
+        accent: '#9a4a2c',
+        heading1: 'foreground',
+        heading2: 'foreground',
+        heading3: 'foreground',
+        heading4: 'foreground',
+        heading5: 'foreground',
+        heading6: 'foreground',
+        separator: '#e5e0d3',
+        link: 'accent',
+      },
+      'min-dark': {
+        background: '#201c15',
+        foreground: '#ece7da',
+        accent: '#e08a5f',
+        heading1: 'foreground',
+        heading2: 'foreground',
+        heading3: 'foreground',
+        heading4: 'foreground',
+        heading5: 'foreground',
+        heading6: 'foreground',
+        separator: '#3a352a',
+        link: 'accent',
+      },
     },
   },
   // Social links to display in the footer.
