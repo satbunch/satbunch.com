@@ -66,7 +66,7 @@ const config: SiteConfig = {
       'min-light': {
         background: '#fbf9f5',
         foreground: '#262218',
-        accent: '#9a4a2c',
+        accent: '#4d6b42',
         heading1: 'foreground',
         heading2: 'foreground',
         heading3: 'foreground',
@@ -79,7 +79,7 @@ const config: SiteConfig = {
       'min-dark': {
         background: '#201c15',
         foreground: '#ece7da',
-        accent: '#e08a5f',
+        accent: '#8fbf7a',
         heading1: 'foreground',
         heading2: 'foreground',
         heading3: 'foreground',
