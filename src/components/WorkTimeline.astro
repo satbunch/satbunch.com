@@ -23,7 +23,7 @@ const { entries } = Astro.props
         <div class="font-mono text-[11px] text-foreground/55 mb-1">{entry.period}</div>
         <div class="text-[15.5px] font-semibold mb-0.5">{entry.role}</div>
         <div class="text-[12.5px] italic text-foreground/65 mb-1.5">{entry.company}</div>
-        <p class="text-[13.5px] leading-snug mb-2 text-foreground/90">{entry.description}</p>
+        <div class="text-[13.5px] leading-snug mb-2 text-foreground/90">{entry.description}</div>
         <div class="font-mono text-[11px] text-accent">{entry.tags.join(' / ')}</div>
       </div>
     ))
