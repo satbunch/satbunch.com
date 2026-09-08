@@ -1,0 +1,47 @@
+---
+layout: '~/layouts/MarkdownLayout.astro'
+title: About
+---
+
+import WorkTimeline from '~/components/WorkTimeline.astro'
+
+フロントエンドからバックエンドまで幅広く携わるエンジニア。
+
+## Work
+
+<WorkTimeline
+  entries={[
+    {
+      period: '2025.10 — 現在',
+      role: 'PROMOの開発・保守',
+      company: '株式会社ダイヤモンドファンタジー・自社サービス',
+      description: 'CMS(管理画面)の新規機能実装、薬機法チェックAI機能のプロンプト改善を担当。',
+      tags: ['TypeScript', 'Java', 'Spring Boot', 'AWS Bedrock'],
+    },
+    {
+      period: '2024.07 — 2024.10',
+      role: '官庁向けモバイルアプリ開発',
+      company: 'SES',
+      description: 'ロジスティクス基盤の設計・製造を担当。',
+      tags: ['TypeScript', 'React Native', 'SQLite'],
+    },
+    {
+      period: '2024.02 — 2024.06',
+      role: 'EVインフラシステム開発',
+      company: 'SES',
+      description: '業務アプリの機能追加・不具合対応・結合試験を担当。',
+      tags: ['TypeScript', 'React', 'Python', 'Flask', 'PostgreSQL'],
+    },
+  ]}
+/>
+
+## Skill
+
+**Frontend**  
+TypeScript / JavaScript / React / HTML / CSS
+
+**Backend**  
+Java / Spring Boot / MyBatis / Python / Flask
+
+**Infrastracure / DB**  
+AWS / MySQL / PostgreSQL

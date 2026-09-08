@@ -1,0 +1,31 @@
+---
+interface Entry {
+  period: string
+  role: string
+  company: string
+  description: string
+  tags: string[]
+}
+
+interface Props {
+  entries: Entry[]
+}
+
+const { entries } = Astro.props
+---
+
+<div class="relative pl-6.5">
+  <div class="absolute left-[5px] top-1.5 bottom-1.5 w-px bg-foreground/15"></div>
+  {
+    entries.map((entry) => (
+      <div class="relative mb-6.5 last:mb-0">
+        <div class="absolute -left-6.5 top-1.25 size-2.25 rounded-full bg-accent" />
+        <div class="font-mono text-[11px] text-foreground/55 mb-1">{entry.period}</div>
+        <h3 class="text-[15.5px] font-semibold mb-0.5">{entry.role}</h3>
+        <div class="text-[12.5px] italic text-foreground/65 mb-1.5">{entry.company}</div>
+        <p class="text-[13.5px] mb-2 text-foreground/90">{entry.description}</p>
+        <div class="font-mono text-[11px] text-accent">{entry.tags.join(' / ')}</div>
+      </div>
+    ))
+  }
+</div>
